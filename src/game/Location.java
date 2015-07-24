@@ -9,6 +9,9 @@ public class Location
 	
 	ArrayList<Item> items;
 	
+	ArrayList<Location> Locations;
+	
+	
 	//Locations
 	//Board Room (MNTL UP)
 	//Pool Table (SPD UP)

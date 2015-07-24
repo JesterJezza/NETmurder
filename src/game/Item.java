@@ -10,7 +10,7 @@ public class Item
 	boolean canSpawn; // whether item can spawn in the world
 	int rarity;
 	
-	// weapons
+	//Weapons
 	// Pool Cue (3 STR) £15 Uses:5
 	// Kitchen Knife (2 STR, 1 SPD) £4 Uses:3
 	// Chair (3 STR, -2 SPD) £7 Uses:2
