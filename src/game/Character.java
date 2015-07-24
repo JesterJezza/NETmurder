@@ -23,9 +23,37 @@ public class Character
 	
 	// stats
 	int health = 100;
+	public void takeDamage(Character attacker, int damage)
+	{
+		health -= damage;
+		if(health < 0)
+		{
+			//StoryGenerator.NewKillEvent(attacker, this);
+		} else
+		{
+			//StoryGenerator.NewDamageEvent(attacker, this);
+		}
+	}
 	int xp = 0;
 	int level = 1;
 	int money = 5000;
+	
+	public void attack(Character target)
+	{
+		// attack succeeds
+		if(this.speed > target.speed)
+		{
+			//StoryGenerator.NewAttackEvent(this, target);
+			target.takeDamage(this, strength);
+		}
+		else
+		{
+			//StoryGenerator.NewFailedAttackEvent(this, target);
+			target.takeDamage(this, strength);
+		}
+		
+		
+	}
 	
 	// equipment
 	WeaponItem weaponItem;
