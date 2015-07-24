@@ -22,8 +22,8 @@ public class Item
 	// Ethernet Cable (1 STR, 1 SPD) £8 Uses: 5
 	
 	//Equipment 
-	// Key Card (1 HLTH) £  Uses:
-	// Mobile Phone (2 HLTH, 1 MNTL) £ Uses: 
-	// Laptop (2 STR) £ Uses:
-	// Suit (3 HLTH, 2 MNTL, 1 CODE) £ Uses:
+	// Key Card (1 HLTH) £5
+	// Mobile Phone (2 HLTH, 1 MNTL) £15 
+	// Laptop (2 STR) £15
+	// Suit (3 HLTH, 2 MNTL, 1 CODE) £30
 }
