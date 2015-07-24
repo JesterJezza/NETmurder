@@ -20,14 +20,14 @@ public class Item
 	public String name;
 	public String description;
 	public int price; // 0 if can't be purchased;
-	
+	public int uses;
 	// whether item can spawn in the world
 	// if the item has no price this will be true
 	public boolean canSpawn = false;
 	public int rarity; // is this a thing?
 	
 	public HashMap<String, Integer> attributeModifiers = new HashMap<String, Integer>();
-	
+
 	public void addModifier(String attribute, int value)
 	{
 		ArrayList<String> attr = (ArrayList<String>)Arrays.asList(globals.Attributes);
@@ -45,8 +45,8 @@ public class Item
 	// Gareth's Gun (9 STR) £100 Uses:10
 	// Beer Can (1 STR, 1 SPD, -1 CODE, -1 MNTL) £3 Uses:3
 	// Pool Balls in a sock (4 STR, -1 SPD) £5 Uses:2
-	// Monitor (3 STR, -1 SPD) £10 Uses: 5
-	// Computer (5 STR, -2 SPD) £20 Uses: 5
+	// Monitor (3 STR, -1 SPD) £20 Uses: 5
+	// Computer (5 STR, -2 SPD) £30 Uses: 5
 	// Ethernet Cable (1 STR, 1 SPD) £8 Uses: 5
 	
 	//Equipment 

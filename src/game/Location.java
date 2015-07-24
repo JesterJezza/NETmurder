@@ -24,10 +24,7 @@ public class Location
 	//M1 (CODE UP, MNTL UP)
 	//M2 (CODE UP, MNTL UP)
 	//Hallway
-	public static void init()
-	{
-		globals.b = Location("b");
-	}
+	
 	
 	public Location(String locationName)
 	{

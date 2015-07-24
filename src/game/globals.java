@@ -12,10 +12,5 @@ public class globals
 	public static Location m1 = new Location("m1");
 	public static Location m2 = new Location("m2");
 	
-	public static void init()
-	{
-		Location.init();
-		
-	}
 
 }
