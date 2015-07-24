@@ -1,14 +1,42 @@
 package game;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+
 public class Item 
 {
-	String name;
-	String description;
-	int price; // 0 if can't be purchased;
-	int uses; //how many times an item can be used
+	public Item(String name, String description, int price)
+	{
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		
+		if(price == 0)
+		{
+			canSpawn = true;
+		}
+	}
+	public String name;
+	public String description;
+	public int price; // 0 if can't be purchased;
 	
-	boolean canSpawn; // whether item can spawn in the world
-	int rarity;
+	// whether item can spawn in the world
+	// if the item has no price this will be true
+	public boolean canSpawn = false;
+	public int rarity; // is this a thing?
+	
+	public HashMap<String, Integer> attributeModifiers = new HashMap<String, Integer>();
+	
+	public void addModifier(String attribute, int value)
+	{
+		ArrayList<String> attr = (ArrayList<String>)Arrays.asList(globals.Attributes);
+		
+		if ( attr.contains(attribute))
+			attributeModifiers.put(attribute, value);
+		else 
+			System.err.println("Error! Incorrect attribute!");
+	}
 	
 	// weapons
 	// Pool Cue (3 STR) £15 Uses:5
