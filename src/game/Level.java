@@ -1,5 +1,10 @@
 package game;
 
-public class Level {
+import java.util.ArrayList;
+
+public class Level 
+{
+	String name;
+	ArrayList<Location> locations;
 
 }

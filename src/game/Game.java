@@ -1,5 +1,7 @@
 package game;
 
-public class Game {
+public class Game 
+{
+	
 
 }

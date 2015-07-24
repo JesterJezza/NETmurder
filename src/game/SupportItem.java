@@ -1,5 +1,6 @@
 package game;
 
-public class SupportItem extends Item {
-
+public class SupportItem extends Item 
+{
+	
 }

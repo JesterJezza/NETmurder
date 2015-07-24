@@ -1,5 +1,9 @@
 package game;
 
-public class Player {
+import java.util.ArrayList;
 
+public class Player 
+{
+	ArrayList<Game> activeGames;
+	ArrayList<Game> finishedGames;
 }

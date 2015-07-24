@@ -1,5 +1,6 @@
 package game;
 
-public class WeaponItem extends Item {
+public class WeaponItem extends Item 
+{
 
 }

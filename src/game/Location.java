@@ -1,5 +1,12 @@
 package game;
 
-public class Location {
+import java.util.ArrayList;
 
+public class Location 
+{
+	String name;
+	ArrayList<Location> connectedLocations;
+	
+	ArrayList<Item> items;
+	
 }
