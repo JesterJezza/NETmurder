@@ -9,4 +9,11 @@ public class Location
 	
 	ArrayList<Item> items;
 	
+	//Locations
+	//Board Room (MNTL UP)
+	//Pool Table (SPD UP)
+	//Toilets (HLTH DOWN)
+	//Lift (SPD DOWN)
+	//M1 (CODE UP, MNTL UP)
+	//M2 (CODE UP, MNTL UP)
 }
